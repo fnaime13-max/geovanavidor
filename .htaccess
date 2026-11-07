@@ -1,0 +1,18 @@
+# Força HTTPS (deixe ativo depois que o SSL da Hostinger estiver instalado)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Não expõe arquivos internos
+<FilesMatch "\.(md|sh)$">
+  Require all denied
+</FilesMatch>
+
+# Cache (CSS/JS têm ?v= no link, então podem ficar em cache)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+</IfModule>
