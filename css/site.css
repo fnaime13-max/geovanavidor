@@ -432,7 +432,7 @@ svg.g { width: 16px; height: 16px; }
 /* foto no tamanho marcado: largura da coluna, do VIDOR até o fim da tela */
 .hero--escuro .hero__nome { top: 22px; }
 .hero--escuro .hero__media { overflow: visible; }
-.hero--escuro .hero__img { position: absolute; z-index: 2; left: 50%; top: calc(22px + 20cqi); transform: translateX(-50%);
+.hero--escuro .hero__img { position: absolute; z-index: 2; left: 50%; top: calc(22px + 20cqi); transform: translateX(-45%);
   width: 100cqi; height: auto; max-width: none; margin: 0; -webkit-mask-image: none; mask-image: none; }
 .hero--escuro #eucaliptoHero { right: -30%; bottom: 0; width: 46%; height: 66%; }
 @media (max-width: 900px) {
