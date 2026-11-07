@@ -260,7 +260,7 @@ svg.g { width: 16px; height: 16px; }
 
 /* ================= FINAL ================= */
 .final { position: relative; overflow: hidden; background-color: var(--espresso); color: var(--papel); text-align: center; padding: var(--sec) 0; background-image: repeating-linear-gradient(90deg, transparent 0 22px, rgba(230,191,129,.03) 22px 23px, rgba(0,0,0,.14) 23px 24px); }
-#eucaliptoFinal { position: absolute; right: 0; bottom: 0; width: min(26vw, 340px); height: 88%; pointer-events: none; }
+#eucaliptoFinal { position: absolute; right: 0; bottom: 0; width: min(34vw, 460px); height: 100%; pointer-events: none; }
 .final__in { position: relative; z-index: 2; max-width: 680px; }
 .final__gv { width: 90px; margin: 0 auto 20px; }
 .final__t { font: 800 clamp(1.8rem, 3.6vw, 2.8rem)/1.08 var(--f-t); letter-spacing: -.03em; margin-bottom: 12px; text-wrap: balance; }
@@ -434,10 +434,10 @@ svg.g { width: 16px; height: 16px; }
 .hero--escuro .hero__media { overflow: visible; }
 .hero--escuro .hero__img { position: absolute; z-index: 2; left: 50%; top: calc(22px + 20cqi); transform: translateX(-50%);
   width: 100cqi; height: auto; max-width: none; margin: 0; -webkit-mask-image: none; mask-image: none; }
-.hero--escuro #eucaliptoHero { right: -8%; bottom: 0; width: 30%; height: 44%; }
+.hero--escuro #eucaliptoHero { right: -14%; bottom: 0; width: 46%; height: 66%; }
 @media (max-width: 900px) {
   .hero--escuro .hero__nome { top: 14px; }
   .hero--escuro .hero__media { height: min(140vw, 640px); overflow: hidden; }
   .hero--escuro .hero__img { width: 92cqi; top: calc(14px + 18cqi); }
-  .hero--escuro #eucaliptoHero { right: -4%; }
+  .hero--escuro #eucaliptoHero { right: -8%; width: 50%; height: 58%; }
 }
